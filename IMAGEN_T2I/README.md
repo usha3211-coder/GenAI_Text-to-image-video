@@ -1,3 +1,4 @@
+#  IMAGEN 
 A text to image diffusion model with high photorealism and a deep level of language understanding.
 imagen comprises
                A frozen T5 xxl encoder to map input text into a sequence of embeddings.
