@@ -1,4 +1,4 @@
-Standard Libraries:
+# Standard Libraries:
 
 black==23.7.0: Likely used for code formatting and style consistency.
 chardet==5.1.0: Potentially used for character encoding detection in text data.
@@ -40,7 +40,7 @@ warnings (built-in): Allows emitting warning messages during program execution.
 xml.etree.ElementTree (built-in): Enables parsing and generating XML (Extensible Markup Language) data structures.
 
 
-Custom Libraries:
+# Custom Libraries:
 
 einops>=0.6.1: Offers functions for manipulating Einstein notation (a compact way to express tensor operations) in PyTorch.
 fairscale>=0.4.13: Provides tools for distributed training and scaling deep learning models across multiple GPUs or machines.
