@@ -10,5 +10,7 @@ Limitations:- common limitations of diffusion models, such as slower inference s
 
 Accuracy:- The authors report strong performance of their text-to-video model, outperforming previous state-of-the-art methods on the UCF-101 zero-shot text-to-video generation task, with an FVD score of 242.02 compared to previous best of 355.20.They also show that their model outperforms other image-to-video and multi-view generation methods through human preference studies.
 
+<img width="1151" alt="Screenshot 2024-06-25 at 11 33 35" src="https://github.com/usha3211-coder/Research-Development/assets/150019156/b3cbb6b6-bec1-46ce-b7fe-fc7e953a912a">
+
 
 
