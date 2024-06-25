@@ -1,4 +1,4 @@
-# Sora = (closed source)
+# Sora 
 
 * generate videos up to a minute long while maintaining casual quality and adherence to the users prompt.
 * generate complex scenes with multiple characters, specific types of motion, and accurate details of the subject and background.
