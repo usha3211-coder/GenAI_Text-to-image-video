@@ -1,5 +1,5 @@
 # Architecture:- 
-      The model is based on a latent video diffusion architecture It inserts temporal convolution and attention layers into a 2D U-Net architecture.
+   The model is based on a latent video diffusion architecture It inserts temporal convolution and attention layers into a 2D U-Net architecture.
 The model is first pretrained on a large video dataset (LVD) using a 3-stage training process:
           1. Image pretraining on a text-to-image diffusion model like Stable Diffusion to get a strong visual representation.
           2. Video pretraining on a large, curated video dataset (LVD-F) at lower resolution.
