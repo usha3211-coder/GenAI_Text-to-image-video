@@ -53,8 +53,8 @@ Text Encoder:
 Process: Takes the text prompt and converts it into a latent embedding (numerical representation) capturing the semantic meaning.
 Output: Latent Embedding
 Diffusion Model:
-Process:
-                               the diffusion model is fine-tuned on a dataset of videos and their corresponding text captions. This dataset is used to train the model to generate low-resolution videos that are temporally coherent and aligned with the text prompts.
+            Process:
+                    The diffusion model is fine-tuned on a dataset of videos and their corresponding text captions. This dataset is used to train the model to generate low-resolution videos that are temporally coherent and aligned with the text prompts.
 Starts with a noisy video representation.
 Iteratively refines the video using the latent embedding from the text encoder.
 Gradually removes noise to create a video aligned with the text prompt.
