@@ -1,0 +1,47 @@
+Standard Libraries:
+
+black==23.7.0: Likely used for code formatting and style consistency.
+chardet==5.1.0: Potentially used for character encoding detection in text data.
+collections (built-in): Provides data structures like lists, dictionaries, and sets for organizing and manipulating data.
+contextlib (built-in): Offers utilities for managing context managers, simplifying common coding patterns.
+copy (built-in): Provides functions for copying and deepcopy of objects.
+csv (built-in): Enables reading and writing CSV (comma-separated values) data files.
+curses (built-in): Used for text-based user interfaces in terminal environments (less common nowadays).
+datetime (built-in): Provides classes for handling dates, times, and timedeltas.
+functools (built-in): Offers higher-order functions for working with functions in Python.
+glob (built-in): Provides utilities for finding pathnames matching a specific pattern.
+inspect (built-in): Enables inspecting live objects, their attributes, and methods.
+io (built-in): Offers classes for working with various input/output operations (files, streams).
+itertools (built-in): Provides functions for creating iterators and manipulating iterables.
+json (built-in): Enables encoding and decoding JSON (JavaScript Object Notation) data.
+logging (built-in): Offers functionalities for logging messages at different levels (debug, info, warning, error).
+math (built-in): Provides mathematical functions (trigonometry, logarithms, etc.).
+multiprocessing (built-in): Allows spawning multiple processes for parallel or concurrent tasks.
+os (built-in): Offers functions for interacting with the operating system (file paths, directory operations, environment variables).
+operator (built-in): Provides standard operators like addition, multiplication, etc.
+os.path (built-in): A submodule of os offering utilities related to file paths.
+pickle (built-in): Used for serializing and deserializing Python objects (storing and loading data).
+platform (built-in): Provides information about the underlying system (OS, architecture).
+random (built-in): Offers functions for generating random numbers.
+re (built-in): Enables regular expression matching and manipulation.
+shelve (built-in): Used for persistent key-value storage using a database-like interface.
+shutil (built-in): Provides functions for manipulating files and directories.
+socket (built-in): Allows creating network sockets for communication.
+sqlite3 (built-in): Enables interacting with SQLite3 databases (embedded database management).
+statistics (built-in): Offers statistical functions (mean, median, standard deviation).
+subprocess (built-in): Used for launching subprocesses and capturing their output.
+sys (built-in): Provides access to system parameters and functions (arguments, exit code).
+threading (built-in): Allows creating threads for concurrent execution within a single process.
+time (built-in): Offers functions for measuring time intervals and manipulating dates/times.
+traceback (built-in): Used for handling traceback objects (information about exceptions).
+typing (built-in): Enables type hints for improved code readability and maintainability.
+urllib.request (built-in): Offers utilities for fetching URLs and making HTTP requests.
+warnings (built-in): Allows emitting warning messages during program execution.
+xml.etree.ElementTree (built-in): Enables parsing and generating XML (Extensible Markup Language) data structures.
+
+
+Custom Libraries:
+
+einops>=0.6.1: Offers functions for manipulating Einstein notation (a compact way to express tensor operations) in PyTorch.
+fairscale>=0.4.13: Provides tools for distributed training and scaling deep learning models across multiple GPUs or machines.
+fire>=0.5.0: Allows creating simple command-line interfaces based on Python functions.
