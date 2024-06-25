@@ -12,11 +12,10 @@
 
 # Text Preprocessing:
 
-Tokenization: The text description is split into individual words or phrases (tokens).
-Text Embedding: Each token (or the entire description depending on the implementation) is converted into a numerical representation using a pre-trained text encoder, like T5 XXL based on Imagen's findings. This creates a text embedding that captures the semantic meaning of the text. (Block Diagram: Text Prompt)
-Imagen Architecture Breakdown:
+* Tokenization: The text description is split into individual words or phrases (tokens).
+* Text Embedding: Each token (or the entire description depending on the implementation) is converted into a numerical representation using a pre-trained text encoder, like T5 XXL based on Imagen's findings. This creates a text embedding that captures the semantic meaning of the text. 
 
-# The core of Imagen's architecture consists of cascaded diffusion models for image generation:
+# Imagen Architecture Breakdown:
 
 1. 64x64 Image Diffusion Model:
 
