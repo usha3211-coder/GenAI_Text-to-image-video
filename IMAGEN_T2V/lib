@@ -1,3 +1,5 @@
+imagen_pytorch.imagen_video: This submodule likely deals with video processing for the Imagen model, including Unet3D for a 3D U-Net architecture, resize_video_to for video resizing, and scale_video_time for video time scaling.
+
 #  Libraries:
 
 click:  to create a command-line interface (CLI) for the script. It allows defining commands (sample, config, train) and their options for user interaction.
