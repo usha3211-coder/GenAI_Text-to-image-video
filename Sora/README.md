@@ -5,7 +5,7 @@
 * either forward or backward in time.
 * can produce a seamless infinite loop.
 
-# how is sora trained
+# How is sora trained
 * Transformer diffusion model
 * video compression network
                     input-raw video
@@ -19,7 +19,7 @@
                      GPT to turn short user prompts into longer detailed captions that are sent to the video model
                       enables sora to generate high quality videos that accurately follow user prompts.
 
-# limitations
+# Limitations
 * Struggling to accurately simulate complex space
 * Understand some instances of cause and effect
 * Confuse spatial details of a prompt
