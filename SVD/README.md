@@ -13,4 +13,35 @@ Accuracy:- The authors report strong performance of their text-to-video model, o
 <img width="1151" alt="Screenshot 2024-06-25 at 11 33 35" src="https://github.com/usha3211-coder/Research-Development/assets/150019156/b3cbb6b6-bec1-46ce-b7fe-fc7e953a912a">
 
 
+Input: Text prompt
+1. Text Preprocessing
+Description: Splits the text description into individual words or phrases (tokens).
+Embedding (CLIP): Converts tokens (or entire description) into numerical representations using CLIP, capturing semantic meaning.
+2. Text-to-Image Encoder (Optional)
+Description: This block (potentially a pre-trained image generation model) translates the CLIP embedding into an initial latent image representation, capturing some visual aspects based on the text.
+3. Video Training Stage
+Input:CLIP Embedding (if Text-to-Image Encoder not used): Directly feeds the semantic meaning of the text description.
+Latent Image Representation (if Text-to-Image Encoder used): Provides an initial visual representation based on the text.
+Temporal Encoder: Processes the input to extract and encode information relevant for video generation, including:
+Capturing the essence of the text description or the initial visual representation (objects, actions, relationships).
+Adding temporal awareness by analyzing inherent temporal information or relationships.
+Output: Encoded representation suitable for video generation.
+5. U-Net with Spatial and Temporal Attention
+Description: Processes the encoded representation from the temporal encoder, incorporating both:
+Spatial information (what's in each frame).
+Temporal information (how things change over time) ensured by:
+Temporal Convolution & Attention Layers strategically inserted within the U-Net.
+CLIP Embedding Integration: Throughout the U-Net, the CLIP embedding is used to condition the video generation process, ensuring the video aligns with the text description.
+Output: Latent video representation containing a sequence of encoded frames.
+6. Noise Injection (Forward Diffusion) (Training Only)
+Description: Progressively adds noise to the latent video representation during training to improve model robustness and ability to generate diverse and realistic videos. (Not used for video generation)
+7. Video Decoder
+Description: Decodes the final latent video representation back into a sequence of images, forming the video based on the text description.
+Output: Generated Video
+8. Fine-tuning Stage
+Description: Further refines the model for improved video quality using:
+High-Quality Video Input: High-quality video data used for fine-tuning.
+Fine-tune U-Net: The U-Net with spatial and temporal attention is fine-tuned on the high-quality video data.
+Output: Enhanced Model for Video Generation
+
 
