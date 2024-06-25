@@ -3,7 +3,7 @@
 The model is first pretrained on a large video dataset (LVD) using a 3-stage training process:
           1. Image pretraining on a text-to-image diffusion model like Stable Diffusion to get a strong visual representation.
           2. Video pretraining on a large, curated video dataset (LVD-F) at lower resolution.
-         3. High-resolution finetuning on a smaller, high-quality video dataset
+          3. High-resolution finetuning on a smaller, high-quality video dataset
 
 # Datasets:-  
    use a large, uncurated video dataset called LVD (600 million samples) and curate it using techniques like optical flow, text detection, and CLIP-based aesthetics scoring to create a cleaner dataset called LVD-F. They then finetune the model on a smaller, high-quality dataset of 1 million video samples at higher resolution (576x1024).
