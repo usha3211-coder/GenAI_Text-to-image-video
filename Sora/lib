@@ -1,4 +1,4 @@
-Standard Libraries:
+# Standard Libraries:
 
 pandas: Enables efficient data manipulation and analysis in tabular form (often used for data preprocessing and postprocessing).
 Deep Learning Libraries:
@@ -7,7 +7,7 @@ timm: Offers a collection of pre-trained image models (e.g., EfficientNet, ViT) 
 torchvision (assumed, not explicitly listed): Likely used for computer vision tasks like image loading, transformation, and augmentation, possibly for data preparation in Open-Sora.
 torch (assumed, not explicitly listed): The core PyTorch library for building and training deep learning models.
 
-Other Libraries:
+# Other Libraries:
 
 tqdm: Provides progress bars for visualizing the training or inference process, enhancing user experience.
 wandb (optional): A cloud-based platform for experiment tracking, logging, and visualization, potentially used for monitoring Open-Sora's training performance.
