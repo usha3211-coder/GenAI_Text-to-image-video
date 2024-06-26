@@ -5,7 +5,7 @@ This repository is a collection of several text-to-video generation models, incl
 * Sora
 * Mora
 * SVD
-* Imagen
+* Imagen video
   
 Each subfolder within this repository corresponds to a specific model and contains two main files:
 
