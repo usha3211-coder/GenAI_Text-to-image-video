@@ -1,9 +1,9 @@
-libraries are used:
+# libraries are used:
 
-transformers This library by Hugging Face provides state-of-the-art pre-trained models for natural language processing tasks.
-bitsandbytes: A library for 8-bit optimizations and memory-efficient training.
-deepspeed: A deep learning optimization library that provides various tools to improve training speed and efficiency.
-accelerate: This is linked to a specific GitHub commit, which indicates it is likely used for optimizing model training across different hardware setups.
-fire: A library for automatically generating command-line interfaces (CLIs) from Python code.
-tqdm: A fast, extensible progress bar for loops and other operations.
-torch: The PyTorch library, which is a staple in deep learning for tensor computation and model building.
+transformers: ## This library by Hugging Face provides state-of-the-art pre-trained models for natural language processing tasks.
+bitsandbytes: ## A library for 8-bit optimizations and memory-efficient training.
+deepspeed: ## A deep learning optimization library that provides various tools to improve training speed and efficiency.
+accelerate: ## This is linked to a specific GitHub commit, which indicates it is likely used for optimizing model training across different hardware setups.
+fire: ## A library for automatically generating command-line interfaces (CLIs) from Python code.
+tqdm: ## A fast, extensible progress bar for loops and other operations.
+torch: ## The PyTorch library, which is a staple in deep learning for tensor computation and model building.
