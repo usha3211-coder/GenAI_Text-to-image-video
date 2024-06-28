@@ -87,3 +87,7 @@ It reconciles the predictions from the SSR model for each segment to ensure a sm
  Output: High-quality or very high-resolution video with temporal coherence
  
 Final Output: Video clip that adheres to the description provided in the text prompt.
+
+# Reference code
+visit https://github.com/lucidrains/lumiere-pytorch
+
