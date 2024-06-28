@@ -40,4 +40,5 @@ Output:
 The final outcome is a high-resolution image (1024x1024) that corresponds to the text description. 
 
 
-# Reference Code: visit https://github.com/lucidrains/imagen-pytorch/tree/main
+# Reference Code:
+visit https://github.com/lucidrains/imagen-pytorch/tree/main
