@@ -16,3 +16,7 @@
 * Progressive Distillation (Optional): This step can be used to create faster models for quicker generation without significant quality loss.
 * Classifier-Free Guidance: Applied throughout the process to ensure the generated video aligns with the text prompt.
 * Output Video: The final high-resolution video corresponding to the user's input.
+
+
+ # Reference code:
+ visit https://github.com/lucidrains/imagen-pytorch/tree/main
