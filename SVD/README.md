@@ -49,3 +49,6 @@ Description: Further refines the model for improved video quality using:
 High-Quality Video Input: High-quality video data used for fine-tuning.
 Fine-tune U-Net: The U-Net with spatial and temporal attention is fine-tuned on the high-quality video data.
 Output: Enhanced Model for Video Generation
+
+# Reference code
+visit https://github.com/nateraw/stable-diffusion-videos
