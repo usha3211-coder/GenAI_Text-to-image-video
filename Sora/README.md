@@ -38,3 +38,7 @@ Explanation of Blocks:
   (a) Latent Noise:An initial latent noise vector is introduced as the starting point for the diffusion process.
   (b) Progressive Denoising: The diffusion transformer progressively refines the video content by denoising the latent noise vector, incorporating the text embedding and attention mechanisms to achieve temporal coherence and frame prediction throughout the sequence.
 5.Output Video:The final generated video corresponding to the user's text prompt.
+
+
+# Reference code
+visit https://github.com/hpcaitech/Open-Sora/tree/main
