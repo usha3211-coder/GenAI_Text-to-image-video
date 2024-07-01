@@ -1,28 +1,28 @@
 # Libraries Used in Lumiere and their Functionalities:
-Torch: ## The foundation for defining the Lumiere model architecture, performing computations, and training the network.
-Einops: ## Enables efficient handling of video data (tensors with additional time dimension) by reshaping, packing/unpacking features across time steps, and repeating information for temporal modules.
-Beartype: ## Improves code maintainability and reduces errors by enforcing type annotations on function arguments and return values.
-x-transformers: ## Implements attention mechanisms for learning relationships between features across different parts of the video sequence.
-Optree: ## Potentially used for flattening intermediate model outputs or unpacking data for specific operations.
+Torch: ## The foundation for defining the Lumiere model architecture, performing computations, and training the network. ##
+Einops: ## Enables efficient handling of video data (tensors with additional time dimension) by reshaping, packing/unpacking features across time steps, and repeating information for temporal modules. ##
+Beartype: ## Improves code maintainability and reduces errors by enforcing type annotations on function arguments and return values. ##
+x-transformers: ## Implements attention mechanisms for learning relationships between features across different parts of the video sequence. ##
+Optree: ## Potentially used for flattening intermediate model outputs or unpacking data for specific operations. ##
 
 
 # Optional Libraries:
-copy: ## Used for deep copying the text-to-image model before modifying it in Lumiere.
-math: ## Used for mathematical operations like calculating square root (sqrt) in normalize_weight.
-functools: ## Offers decorator functions for modifying existing functions in Lumiere (e.g., @residualize).
-torch.nn: ## Provides various building blocks for constructing neural networks, like convolutional layers, activation functions, and pooling layers (used for the projection head in MPAttentionInflationBlock).
-torch.nn.functional (F): ## Offers functional implementations of common neural network operations used in the code (e.g., F.linear, F.conv2d, F.silu).
+copy: ## Used for deep copying the text-to-image model before modifying it in Lumiere. ##
+math: ## Used for mathematical operations like calculating square root (sqrt) in normalize_weight. ##
+functools: ## Offers decorator functions for modifying existing functions in Lumiere (e.g., @residualize). ##
+torch.nn: ## Provides various building blocks for constructing neural networks, like convolutional layers, activation functions, and pooling layers (used for the projection head in MPAttentionInflationBlock). ##
+torch.nn.functional (F): ## Offers functional implementations of common neural network operations used in the code (e.g., F.linear, F.conv2d, F.silu). ##
 
 
 # Functionality Specific to MP(magnitude-preserving) Modules:
-l2norm: ## Performs L2 normalization across a specified dimension, crucial for weight normalization in MP linear and convolutional layers.
-normalize_weight: ## Normalizes the weights of a linear or convolutional layer using L2 norm and scales it by the appropriate factor for magnitude preservation.
-interpolate_1d: ## Upsamples or downsamples a 1D tensor (representing the time dimension in video data) using a specified interpolation mode (e.g., bilinear).
-MPSiLU: ## Implements the modified SiLU activation function used in the paper.
-Gain: ## A simple module that scales the input by a learnable gain parameter.
-MPAdd: ## Implements the magnitude-preserving addition operation used for combining residuals with outputs from MP convolutional or attention blocks.
-MPAttention: ## Defines a multi-head attention module with MP weight normalization and dropout for video processing.
-MPTemporalDownsample and MPTemporalUpsample: ## Modules for downsampling and upsampling the temporal dimension of video data using 1D convolutions with appropriate initialization (e.g., Dirac delta for downsampling).
-MPConvolutionInflationBlock: ## Combines a spatial convolutional layer, a temporal convolutional layer with MP weight normalization, and a projection head for processing video data with MP modules.
-MPAttentionInflationBlock: ## Stacks multiple MP attention layers with residual connections and dropout for video processing.
+l2norm: ## Performs L2 normalization across a specified dimension, crucial for weight normalization in MP linear and convolutional layers. ##
+normalize_weight: ## Normalizes the weights of a linear or convolutional layer using L2 norm and scales it by the appropriate factor for magnitude preservation. ##
+interpolate_1d: ## Upsamples or downsamples a 1D tensor (representing the time dimension in video data) using a specified interpolation mode (e.g., bilinear). ##
+MPSiLU: ## Implements the modified SiLU activation function used in the paper. ##
+Gain: ## A simple module that scales the input by a learnable gain parameter. ##
+MPAdd: ## Implements the magnitude-preserving addition operation used for combining residuals with outputs from MP convolutional or attention blocks. ##
+MPAttention: ## Defines a multi-head attention module with MP weight normalization and dropout for video processing. ##
+MPTemporalDownsample and MPTemporalUpsample: ## Modules for downsampling and upsampling the temporal dimension of video data using 1D convolutions with appropriate initialization (e.g., Dirac delta for downsampling). ##
+MPConvolutionInflationBlock: ## Combines a spatial convolutional layer, a temporal convolutional layer with MP weight normalization, and a projection head for processing video data with MP modules. ##
+MPAttentionInflationBlock: ## Stacks multiple MP attention layers with residual connections and dropout for video processing. ##
 
