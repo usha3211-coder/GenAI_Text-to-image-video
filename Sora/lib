@@ -1,5 +1,5 @@
 # Standard Libraries:
-pandas: ##Enables efficient data manipulation and analysis in tabular form (often used for data preprocessing and postprocessing).##
+pandas: #Enables efficient data manipulation and analysis in tabular form (often used for data preprocessing and postprocessing).#
 
 # Deep Learning Libraries:
 transformers: ## Provides pre-trained transformer models (like T5, BART) for various natural language processing (NLP) tasks, potentially used for text generation in Open-Sora.
