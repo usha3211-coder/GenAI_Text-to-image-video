@@ -1,5 +1,5 @@
 #  Libraries:
-click: ## To create a command-line interface (CLI) for the script. It allows defining commands (sample, config, train) and their options for user interaction.##
+click: ## To create a command-line interface (CLI) for the script. It allows defining commands (sample, config, train) and their options for user interaction. ##
 pathlib: ## helps manage file paths in a platform-independent way. It's used for handling file paths to the model checkpoint, configuration file, and generated images.
 pkgutil: ## used to access package resources. In this case, it's used to retrieve the default configuration file (default_config.json) embedded within the imagen_pytorch package.
 imagen_pytorch: ## core library for working with Imagen models. It provides functionalities for:
